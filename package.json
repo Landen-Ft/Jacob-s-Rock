@@ -1,16 +1,21 @@
 {
   "name": "jacobs-rock",
+  "type": "module",
   "version": "1.0.0",
   "description": "Discord bot for Jacob's Rock server",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "node index.js"
+    "start": "tsx --env-file=.env index.ts"
   },
   "author": "YourName",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "discord.js": "^14.26.0",
-    "dotenv": "^17.4.0"
+    "dotenv": "^17.4.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0"
   }
 }
